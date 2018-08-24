@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvIntroducir;
     Button btnCalcular;
     TextView tvImc;
+    TextView tvResultado;
 
 
     @Override
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         tvIntroducir = findViewById(R.id.tv_introducir);
         btnCalcular = findViewById(R.id.btn_calcular);
         tvImc = findViewById(R.id.tv_imc);
+        tvResultado = findViewById(R.id.tv_resultado);
 
         btnCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,9 +39,11 @@ public class MainActivity extends AppCompatActivity {
                 String altura = etAltura.getText().toString();
                 int valorAltura = Integer.parseInt(altura);
 
-                double valorIMC = (int) valorMasa/Math.pow(valorAltura, 2);
+                double valorIMC = valorMasa/Math.pow(valorAltura, 2);
 
-                tvImc.setText((int) valorIMC);
+                String resultadito = Double.toString(valorIMC);
+
+                tvResultado.setText(resultadito);
 
             }
         });
