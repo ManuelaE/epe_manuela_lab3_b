@@ -27,11 +27,12 @@
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="20dp"
-        android:background="#1F4A74"
+        android:background="@drawable/borde_redondo"
         android:hint="Masa"
         android:textColorHint="#b6b6ad"
         android:padding="15dp"
         android:textSize="20sp"
+        android:textColor="#FFFF"
         />
 
     <EditText
@@ -41,11 +42,12 @@
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="30dp"
-        android:background="#1F4A74"
+        android:background="@drawable/borde_redondo"
         android:hint="Altura"
         android:textColorHint="#b6b6ad"
         android:padding="15dp"
         android:textSize="20sp"
+        android:textColor="#FFFF"
         />
 
     <TextView
@@ -67,7 +69,7 @@
         android:id="@+id/btn_calcular"
         android:textSize="20sp"
         android:padding="15dp"
-        android:background="#1F4A74"
+        android:background="@drawable/borde_redondo"
         android:textColor="#FFFF"
         android:layout_marginRight="80dp"
         android:layout_marginLeft="80dp"
@@ -94,7 +96,7 @@
         android:layout_marginRight="80dp"
         android:textColor="#FFFF"
         android:id="@+id/tv_resultado"
-        android:background="#1F4A74"
+        android:background="@drawable/borde_redondo"
         android:gravity="center"
         />
 
