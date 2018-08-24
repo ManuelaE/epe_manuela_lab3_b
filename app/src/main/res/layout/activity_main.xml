@@ -11,17 +11,26 @@
     <!-- utilizo sp para el tamaño del texto y dp para las demás dimensiones -->
     <!-- si pongo en width: wrap se adapta al ancho del texto -->
 
+    <ImageView
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        />
+
     <EditText
         android:id="@+id/et_masa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:background="#1F4A74"
         android:hint="Masa"
         android:textColorHint="#b6b6ad"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textSize="20sp"
         />
 
@@ -29,14 +38,13 @@
         android:id="@+id/et_altura"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginLeft="70dp"
         android:layout_marginRight="70dp"
         android:layout_marginTop="30dp"
         android:background="#1F4A74"
         android:hint="Altura"
         android:textColorHint="#b6b6ad"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textSize="20sp"
         />
 
@@ -58,7 +66,7 @@
         android:text="CALCULAR"
         android:id="@+id/btn_calcular"
         android:textSize="20sp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:background="#1F4A74"
         android:textColor="#FFFF"
         android:layout_marginRight="80dp"
@@ -70,7 +78,7 @@
         android:layout_height="wrap_content"
         android:text="Tu IMC es"
         android:textSize="18sp"
-        android:padding="20dp"
+        android:padding="15dp"
         android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
         android:textColor="#FFFF"
@@ -80,7 +88,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:padding="15dp"
         android:layout_marginLeft="80dp"
         android:layout_marginRight="80dp"
