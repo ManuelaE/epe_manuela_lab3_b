@@ -1,11 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#206abf"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <!-- wrap es para que la altura se acomode al texto -->
+    <!-- utilizo sp para el tamaño del texto y dp para las demás dimensiones -->
+    <!-- si pongo en width: wrap se adapta al ancho del texto -->
+
+    <EditText
+        android:id="@+id/et_masa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="50dp"
+        android:background="#1F4A74"
+        android:hint="Masa"
+        android:textColorHint="#b6b6ad"
+        android:padding="20dp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/et_altura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="30dp"
+        android:background="#1F4A74"
+        android:hint="Altura"
+        android:textColorHint="#b6b6ad"
+        android:padding="20dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Introduce los datos para calcular tu IMC"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:textColor="#FFFF"
+        android:id="@+id/tv_introducir"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        android:id="@+id/btn_calcular"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:background="#1F4A74"
+        android:textColor="#FFFF"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu IMC es"
+        android:textSize="18sp"
+        android:padding="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textColor="#FFFF"
+        android:id="@+id/tv_imc"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:padding="15dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:textColor="#FFFF"
+        android:id="@+id/tv_resultado"
+        android:background="#1F4A74"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
